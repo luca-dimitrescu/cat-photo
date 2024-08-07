@@ -1,6 +1,37 @@
 * {
     box-sizing: border-box;
+}
 
+@font-face {
+    font-family: 'BebasNeue';
+    src: url('BebasNeue-Regular.ttf');
+}
+
+@font-face {
+    font-family: 'RobotoMonospace';
+    src: url(RobotoMono-VariableFont_wght.ttf);
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    font-size: 68px;
+    font-family: 'BebasNeue';
+}
+
+h2,
+h3 {
+    font-size: 35px;
+    font-family: 'RobotoMonospace';
+}
+
+
+p {
+    font-size: 22px;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 .container1 {
@@ -9,6 +40,9 @@
     flex-direction: column;
     align-items: center;
     margin-bottom: 80px;
+    text-align: justify;
+    max-width: calc(100%-36vw);
+    flex-wrap: wrap;
 }
 
 .container2 article img {
@@ -30,4 +64,28 @@
     display: flex;
     margin: 0 auto;
     flex-direction: column;
+}
+
+.aside1 {
+    width: 18vw;
+    height: 1395vh;
+    position: absolute;
+    background-color: rgba(162, 148, 155, 0.2)
+}
+
+.aside2 {
+    width: 18vw;
+    height: 1395vh;
+    position: absolute;
+    background-color: rgba(162, 148, 155, 0.2);
+    right: 0;
+}
+
+.intro {
+    font-size: 24px;
+    text-align: justify;
+}
+
+hr {
+    width: calc(100vw - 48vw);
 }
